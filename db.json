@@ -12,7 +12,7 @@
       "message": "Unit 023 is not connecting to server.",
       "attention": "true",
       "date": "04-11-2021",
-      "tech": "Sam Weir"
+      "tech": "Lindsay Weir"
     },
     {
       "id": 3,
@@ -37,6 +37,31 @@
       "id": 3,
       "firstName": "Neal",
       "lastName": "Schweiber"
+    },
+    {
+      "id": 4,
+      "firstName": "Lindsay",
+      "lastName": "Weir"
+    },
+    {
+      "id": 5,
+      "firstName": "Daniel",
+      "lastName": "Desario"
+    },
+    {
+      "id": 6,
+      "firstName": "Ken",
+      "lastName": "Miller"
+    },
+    {
+      "id": 7,
+      "firstName": "Nick",
+      "lastName": "Andopolis"
+    },
+    {
+      "id": 8,
+      "firstName": "Kim",
+      "lastName": "Kelly"
     }
   ]
 }
