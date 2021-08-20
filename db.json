@@ -1,0 +1,42 @@
+{
+  "logs": [
+    {
+      "id": 1,
+      "message": "Replaced hard drive on Unit 331.",
+      "attention": "false",
+      "date": "04-11-2021",
+      "tech": "Neal Schweiber"
+    },
+    {
+      "id": 2,
+      "message": "Unit 023 is not connecting to server.",
+      "attention": "true",
+      "date": "04-11-2021",
+      "tech": "Sam Weir"
+    },
+    {
+      "id": 3,
+      "message": "Unit 154 received a motherboard replacement.",
+      "attention": "false",
+      "date": "04-11-2021",
+      "tech": "Bill Haverchuck"
+    }
+  ],
+  "techs": [
+    {
+      "id": 1,
+      "firstName": "Sam",
+      "lastName": "Weir"
+    },
+    {
+      "id": 2,
+      "firstName": "Bill",
+      "lastName": "Haverchuck"
+    },
+    {
+      "id": 3,
+      "firstName": "Neal",
+      "lastName": "Schweiber"
+    }
+  ]
+}
