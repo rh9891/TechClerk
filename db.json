@@ -3,21 +3,21 @@
     {
       "id": 1,
       "message": "Replaced hard drive on Unit 331.",
-      "attention": "false",
+      "attention": false,
       "date": "04-11-2021",
       "tech": "Neal Schweiber"
     },
     {
       "id": 2,
       "message": "Unit 023 is not connecting to server.",
-      "attention": "true",
+      "attention": true,
       "date": "04-11-2021",
       "tech": "Lindsay Weir"
     },
     {
       "id": 3,
       "message": "Unit 154 received a motherboard replacement.",
-      "attention": "false",
+      "attention": false,
       "date": "04-11-2021",
       "tech": "Bill Haverchuck"
     }
