@@ -17,17 +17,25 @@ const LogItem = ({ log }) => {
           {log.message}
         </a>
         <br />
-        <span className="teal-text text-lighten-4">
+        <span className="blue-grey-text">
           <span></span>Last Updated:{" "}
-          <span className="teal-text text-lighten-3">{log.tech}</span>
-          <span className="teal-text text-lighten-3">
+          <span
+            className="blue-grey-text"
+            style={{ textDecoration: "underline" }}
+          >
+            {log.tech}
+          </span>
+          <span
+            className="blue-grey-text"
+            style={{ textDecoration: "underline" }}
+          >
             {" "}
             (ID #{log.id})
-          </span> on{" "}
-          <Moment format="MMMM Do YYYY [at] h:mm:ss a">{log.date}</Moment>
+          </span>{" "}
+          on <Moment format="MMMM Do YYYY [at] h:mm:ss a">{log.date}</Moment>
         </span>
         <a href="#!" className="secondary-content">
-          <i className="material-icons teal-text text-lighten-3">delete</i>
+          <i className="material-icons blue-grey-text">delete</i>
         </a>
       </div>
     </li>

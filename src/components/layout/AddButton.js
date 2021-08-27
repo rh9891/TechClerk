@@ -5,7 +5,7 @@ const AddButton = () => {
     <div className="fixed-action-btn">
       <a
         href="#add-log-modal"
-        className="btn-floating btn-large teal lighten-2 modal-trigger"
+        className="btn-floating btn-large blue-grey modal-trigger"
       >
         <i className="large material-icons">add</i>
       </a>
@@ -13,7 +13,7 @@ const AddButton = () => {
         <li>
           <a
             href="#tech-list-modal"
-            className="btn-floating teal lighten-3 modal-trigger"
+            className="btn-floating blue-grey modal-trigger"
           >
             <i className="material-icons">person</i>
           </a>
@@ -21,7 +21,7 @@ const AddButton = () => {
         <li>
           <a
             href="#tech-modal"
-            className="btn-floating teal lighten-3 modal-trigger"
+            className="btn-floating blue-grey modal-trigger"
           >
             <i className="material-icons">person_add</i>
           </a>
