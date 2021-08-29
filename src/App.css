@@ -2,8 +2,14 @@ body {
   background-color: lightblue;
 }
 
-#submit-button {
-  margin: 2rem;
+#submit-button-1 {
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
+}
+
+#submit-button-2 {
+  margin-bottom: 2rem;
+  margin-right: 0.5rem;
 }
 
 #system-log-box {
