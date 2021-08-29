@@ -32,8 +32,9 @@ const AddTechModal = () => {
               name="firstName"
               value={firstName}
               onChange={(event) => setFirstName(event.target.value)}
+              className="blue-grey-text"
             />
-            <label htmlFor="firstName" className="active">
+            <label htmlFor="firstName" className="active blue-grey-text">
               First Name
             </label>
           </div>
@@ -46,8 +47,9 @@ const AddTechModal = () => {
               name="lastName"
               value={lastName}
               onChange={(event) => setLastName(event.target.value)}
+              className="blue-grey-text"
             />
-            <label htmlFor="lastName" className="active">
+            <label htmlFor="lastName" className="active blue-grey-text">
               Last Name
             </label>
           </div>

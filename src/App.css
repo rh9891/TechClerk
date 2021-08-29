@@ -23,3 +23,17 @@ body {
 #collection-item-1 {
   background-color: #f8f8ff;
 }
+
+/* .input-field input[type="text"]:focus + label {
+  color: #607d8b;
+} */
+
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid #607d8b !important;
+  box-shadow: 0 1px 0 0 #607d8b !important;
+}
+
+[type="checkbox"]:checked + span:not(.lever):after {
+  background: #607d8b !important;
+  border: #607d8b !important;
+}

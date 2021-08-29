@@ -44,8 +44,9 @@ const AddLogModal = ({ addLog }) => {
               name="message"
               value={message}
               onChange={(event) => setMessage(event.target.value)}
+              className="blue-grey-text"
             />
-            <label htmlFor="message" className="active">
+            <label htmlFor="message" className="active blue-grey-text">
               Log Message
             </label>
           </div>

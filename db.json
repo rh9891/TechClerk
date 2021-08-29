@@ -8,11 +8,11 @@
       "id": 1
     },
     {
-      "message": "Hard drive failed in Unit 502.",
-      "attention": true,
-      "tech": "Neal Schweiber",
-      "date": "2021-08-29T20:55:59.824Z",
-      "id": 2
+      "id": 2,
+      "message": "Fixed Unit 502 hard drive.",
+      "attention": false,
+      "tech": "Sam Weir",
+      "date": "2021-08-29T23:04:13.032Z"
     },
     {
       "message": "Unit 110 is failing to make connection to wireless network.",
