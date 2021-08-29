@@ -22,7 +22,7 @@ const AddLogModal = ({ addLog }) => {
 
       addLog(newLog);
 
-      M.toast({ html: `Log added by ${tech}.` });
+      M.toast({ html: `Log entry added by ${tech}.` });
 
       // Clears field after submission.
       setMessage("");
