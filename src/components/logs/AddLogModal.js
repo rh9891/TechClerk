@@ -1,4 +1,5 @@
-import React, { useState, Fragment } from "react";
+import React, { useState } from "react";
+import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddLogModal = () => {
   const [message, setMessage] = useState("");
@@ -6,13 +7,15 @@ const AddLogModal = () => {
   const [tech, setTech] = useState("");
 
   const onSubmit = () => {
-    console.log(message, tech, attention);
+    if (message === "" || tech === "") {
+      M.toast({ html: "Please submit a log message and select a technician." });
+    }
   };
 
   return (
     <div id="add-log-modal" className="modal" style={modalStyle}>
       <div className="modal-content">
-        <h4 className="blue-grey-text">System Log Entry</h4>
+        <h4 className="blue-grey-text">Add Log Entry</h4>
         <div className="row">
           <div className="input-field">
             <input
@@ -61,7 +64,7 @@ const AddLogModal = () => {
                   value={attention}
                   onChange={(event) => setAttention(!attention)}
                 />
-                <span>Needs Attention</span>
+                <span>Needs Attention?</span>
               </label>
             </p>
           </div>
@@ -71,9 +74,10 @@ const AddLogModal = () => {
         <a
           href="#!"
           onClick={onSubmit}
-          className="modal-close waves-effect waves-green btn-flat blue-grey-text"
+          className="modal-close waves-effect waves-light btn blue-grey"
+          id="submit-button"
         >
-          Enter
+          Submit
         </a>
       </div>
     </div>

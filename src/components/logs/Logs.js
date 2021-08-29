@@ -25,8 +25,8 @@ const Logs = () => {
   }
 
   return (
-    <ul className="collection with-header">
-      <li className="collection-header">
+    <ul className="collection with-header" id="system-log-box">
+      <li className="collection-header" id="collection-header-1">
         <h4 className="center blue-grey-text">System Logs</h4>
       </li>
       {!loading && logs.length === 0 ? (

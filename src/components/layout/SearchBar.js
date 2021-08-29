@@ -2,7 +2,7 @@ import React from "react";
 
 const SearchBar = () => {
   return (
-    <nav style={{ marginBottom: "30px" }} className="grey lighten-2">
+    <nav style={{ marginBottom: "30px" }} className="blue-grey">
       <div className="nav-wrapper">
         <form>
           <div className="input-field">
