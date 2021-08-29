@@ -1,0 +1,14 @@
+export default GET_LOGS = "GET_LOGS";
+export default ADD_LOG = "ADD_LOG";
+export default DELETE_LOG = "DELETE_LOG";
+export default SET_CURRENT = "SET_CURRENT";
+export default CLEAR_CURRENT = "CLEAR_CURRENT";
+export default UPDATE_LOG = "UPDATE_LOG";
+export default CLEAR_LOGS = "CLEAR_LOGS";
+export default SET_LOADING = "SET_LOADING";
+export default LOGS_ERROR = "LOGS_ERROR";
+export default SEARCH_LOGS = "SEARCH_LOGS";
+export default GET_TECHS = "GET_TECHS";
+export default ADD_TECH = "ADD_TECH";
+export default DELETE_TECH = "DELETE_TECH";
+export default TECHS_ERROR = "TECHS_ERROR";
