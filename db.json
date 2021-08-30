@@ -1,11 +1,11 @@
 {
   "logs": [
     {
+      "id": 1,
       "message": "Changed network card in Unit 340.",
       "attention": false,
-      "tech": "Lindsay Weir",
-      "date": "2021-08-29T20:55:04.711Z",
-      "id": 1
+      "tech": "Ken Miller",
+      "date": "2021-08-30T17:23:19.373Z"
     },
     {
       "id": 2,
@@ -62,6 +62,16 @@
       "id": 8,
       "firstName": "Kim",
       "lastName": "Kelly"
+    },
+    {
+      "firstName": "Fred",
+      "lastName": "Flinstone",
+      "id": 9
+    },
+    {
+      "firstName": "Barney",
+      "lastName": "Rubble",
+      "id": 10
     }
   ]
 }
