@@ -62,16 +62,6 @@
       "id": 8,
       "firstName": "Kim",
       "lastName": "Kelly"
-    },
-    {
-      "firstName": "Fred",
-      "lastName": "Flinstone",
-      "id": 9
-    },
-    {
-      "firstName": "Barney",
-      "lastName": "Rubble",
-      "id": 10
     }
   ]
 }
