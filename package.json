@@ -1,0 +1,30 @@
+{
+  "name": "tech-clerk",
+  "version": "1.0.0",
+  "description": "MERN-stack internal application to track IT department tasks and issues.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rh9891/TechClerk.git"
+  },
+  "keywords": [],
+  "author": "Romie Hecdivert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rh9891/TechClerk/issues"
+  },
+  "homepage": "https://github.com/rh9891/TechClerk#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1",
+    "nodemon": "^2.0.12"
+  }
+}
