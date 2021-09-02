@@ -12,7 +12,7 @@ router.post("/", (req, res) => {
 });
 
 // Route to update a log in the database. PUT request to "api/logs/:id". Public access.
-router.delete("/:id", (req, res) => {
+router.put("/:id", (req, res) => {
   res.send("Route to update a log.");
 });
 
