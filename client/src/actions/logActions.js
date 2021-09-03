@@ -9,18 +9,18 @@ import {
   CLEAR_CURRENT,
   SEARCH_LOGS,
 } from "./types";
+import axios from "axios";
 
 // Gets logs from the server.
 export const getLogs = () => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch("/logs");
-    const data = await res.json();
+    const res = await axios.get("/api/logs");
 
     dispatch({
       type: GET_LOGS,
-      payload: data,
+      payload: res.data,
     });
   } catch (error) {
     dispatch({
@@ -35,18 +35,17 @@ export const addLog = (log) => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch("/logs", {
-      method: "POST",
-      body: JSON.stringify(log),
+    const config = {
       headers: {
         "Content-Type": "application/json",
       },
-    });
-    const data = await res.json();
+    };
+
+    const res = await axios.post("/api/logs", log, config);
 
     dispatch({
       type: ADD_LOG,
-      payload: data,
+      payload: res.data,
     });
   } catch (error) {
     dispatch({
@@ -61,9 +60,7 @@ export const deleteLog = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await fetch(`/logs/${id}`, {
-      method: "DELETE",
-    });
+    await axios.delete(`/api/logs/${id}`);
 
     dispatch({
       type: DELETE_LOG,
@@ -82,19 +79,17 @@ export const updateLog = (log) => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch(`/logs/${log.id}`, {
-      method: "PUT",
-      body: JSON.stringify(log),
+    const config = {
       headers: {
         "Content-Type": "application/json",
       },
-    });
+    };
 
-    const data = await res.json();
+    const res = await axios.put(`/api/logs/${log._id}`, log, config);
 
     dispatch({
       type: UPDATE_LOG,
-      payload: data,
+      payload: res.data,
     });
   } catch (error) {
     dispatch({
@@ -109,12 +104,11 @@ export const searchLogs = (text) => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch(`/logs?q=${text}`);
-    const data = await res.json();
+    const res = await axios.get(`/api/logs/${text}`);
 
     dispatch({
       type: SEARCH_LOGS,
-      payload: data,
+      payload: res.data,
     });
   } catch (error) {
     dispatch({

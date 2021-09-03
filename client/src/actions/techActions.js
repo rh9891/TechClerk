@@ -5,18 +5,18 @@ import {
   SET_LOADING,
   TECHS_ERROR,
 } from "./types";
+import axios from "axios";
 
 // Gets techs from server.
 export const getTechs = () => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch("/techs");
-    const data = await res.json();
+    const res = await axios.get("/api/techs");
 
     dispatch({
       type: GET_TECHS,
-      payload: data,
+      payload: res.data,
     });
   } catch (error) {
     dispatch({
@@ -31,19 +31,17 @@ export const addTech = (tech) => async (dispatch) => {
   try {
     setLoading();
 
-    const res = await fetch("/techs", {
-      method: "POST",
-      body: JSON.stringify(tech),
+    const config = {
       headers: {
         "Content-Type": "application/json",
       },
-    });
+    };
 
-    const data = await res.json();
+    const res = await axios.post("/api/techs", tech, config);
 
     dispatch({
       type: ADD_TECH,
-      payload: data,
+      payload: res.data,
     });
   } catch (error) {
     dispatch({
@@ -58,9 +56,7 @@ export const deleteTech = (id) => async (dispatch) => {
   try {
     setLoading();
 
-    await fetch(`/techs/${id}`, {
-      method: "DELETE",
-    });
+    await axios.delete(`/api/techs/${id}`);
 
     dispatch({
       type: DELETE_TECH,
