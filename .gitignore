@@ -9,6 +9,7 @@ package-lock.json
 
 /client/build
 /build
+/config
 
 .DS_Store
 /client/.env.local

@@ -18,28 +18,47 @@
 
 Welcome to Tech Clerk, a native application that provides an easier way to create, assign, and manage IT work orders.
 
+Tech Clerk is a full stack MERN application that also utilizes Redux for state management. The application is responsive across devices and also utilizes Materialize as a CSS framework. (Originally created with a mock backend using JSON-Server, the application then underwent refactoring where a backend was built.)
+
+Tech Clerk has CRUD capabilities: The user can create a log/technician, update the log status as requiring or not requiring attention, delete any technicians/logs from the system, and search the database for a specific log.
+
 ## User Story
 
 ```
-AS A
-I WANT TO
-SO THAT
+AS A user
+I WANT TO create, assign, and update system logs
+SO THAT I can better manage IT work orders.
 ```
 
 ## Features of the Application
 
 ```
-GIVEN
-WHEN I
-THEN I
+GIVEN an IT logger application
+WHEN I click on the "add log" icon
+THEN I can create a log entry and assign a technician to the work order.
 
-WHEN I
-THEN I
+WHEN I create a system log entry
+THEN I can set whether or not the issue needs attention.
+
+WHEN I click on a generated log entry
+THEN I can update the details of that log entry.
+
+WHEN I click on the "technicians" icon
+THEN I will see a list of all the technicians.
+
+WHEN I click on the "add a technician" icon
+THEN I can fill out a form and create a new technician.
+
+WHEN I click on the trash/delete icon
+THEN I can delete a log entry or technician.
+
+WHEN I enter text in the "Search logs..." field
+THEN I can search through the database for a specific log.
 ```
 
 ## Preview of Tech Clerk
 
-![Tech Clerk Landing Page]()
+![Tech Clerk Landing Page](assets/images/techClerkLandingPage.png)
 
 ## Links
 
@@ -60,9 +79,7 @@ Listed below are the frameworks, libraries, and guides that made building this a
 
 ## Usage
 
-```
-
-```
+The application can be initiated by inputting `npm run dev` into the command line interface and running the application on `localhost: 3000`.
 
 ## License
 
