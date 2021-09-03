@@ -12,7 +12,7 @@ const initialState = {
   error: null,
 };
 
-export default (state = initialState, action) => {
+export default function variable(state = initialState, action) {
   switch (action.type) {
     case GET_TECHS:
       return {
@@ -29,7 +29,7 @@ export default (state = initialState, action) => {
     case DELETE_TECH:
       return {
         ...state,
-        techs: state.techs.filter((tech) => tech.id !== action.payload),
+        techs: state.techs.filter((tech) => tech._id !== action.payload),
         loading: false,
       };
     case SET_LOADING:
@@ -47,4 +47,4 @@ export default (state = initialState, action) => {
     default:
       return state;
   }
-};
+}

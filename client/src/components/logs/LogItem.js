@@ -8,7 +8,7 @@ import M from "materialize-css/dist/js/materialize.min.js";
 
 const LogItem = ({ log, deleteLog, setCurrent }) => {
   const onDelete = () => {
-    deleteLog(log.id);
+    deleteLog(log._id);
     M.toast({ html: "Log entry has been deleted." });
   };
 
@@ -28,7 +28,7 @@ const LogItem = ({ log, deleteLog, setCurrent }) => {
         </a>
         <br />
         <span className="blue-grey-text">
-          <span></span>Last Updated:{" "}
+          <span></span>Last Updated by{" "}
           <span
             className="blue-grey-text"
             style={{ textDecoration: "underline" }}
@@ -38,11 +38,9 @@ const LogItem = ({ log, deleteLog, setCurrent }) => {
           <span
             className="blue-grey-text"
             style={{ textDecoration: "underline" }}
-          >
-            {" "}
-            (ID #{log.id})
-          </span>{" "}
-          on <Moment format="MMMM Do YYYY [at] h:mm:ss A">{log.date}</Moment>
+          ></span>{" "}
+          on <Moment format="MMMM Do YYYY [at] h:mm:ss A">{log.date}</Moment>.{" "}
+          REF# {log._id.substring(0, 6)}.
         </span>
         <a href="#!" onClick={onDelete} className="secondary-content">
           <i className="material-icons blue-grey-text">delete</i>
