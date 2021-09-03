@@ -40,7 +40,7 @@ const LogItem = ({ log, deleteLog, setCurrent }) => {
             style={{ textDecoration: "underline" }}
           ></span>{" "}
           on <Moment format="MMMM Do YYYY [at] h:mm:ss A">{log.date}</Moment>.{" "}
-          REF# {log._id.substring(0, 6)}.
+          REF# {log._id.substring(0, 8)}.
         </span>
         <a href="#!" onClick={onDelete} className="secondary-content">
           <i className="material-icons blue-grey-text">delete</i>

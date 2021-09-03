@@ -1,0 +1,3 @@
+{
+  "MONGO_URI": "mongodb+srv://dbUser:techclerk@techclerk.gilzz.mongodb.net/techclerk?retryWrites=true&w=majority"
+}
